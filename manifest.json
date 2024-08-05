@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Bearer Token Extractor",
+  "version": "1.0",
+  "permissions": [
+    "webRequest",
+    "activeTab",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "img.png"
+  }
+}
